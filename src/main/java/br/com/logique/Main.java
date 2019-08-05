@@ -3,7 +3,6 @@
  */
 package br.com.logique;
 
-import java.io.IOException;
 
 import br.com.logique.core.Bot;
 import br.com.logique.view.InterfaceTexto;
@@ -14,7 +13,7 @@ import br.com.logique.view.InterfaceTexto;
  */
 public class Main {
 
-	public static void main(String[] args) throws InterruptedException, IOException {
+	public static void main(String[] args){
 
 		Bot bot = new Bot();
 		InterfaceTexto placar = new InterfaceTexto();
@@ -23,5 +22,4 @@ public class Main {
         placar.imprimirPlacar(bot.getPontuacao()).forEach(System.out::println);
         
 	}
-	
 }
